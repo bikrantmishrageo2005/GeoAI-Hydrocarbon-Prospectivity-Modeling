@@ -1,109 +1,205 @@
-# GeoAI-Hydrocarbon-Prospectivity-Modeling
+<p align="center">
 
+# 🛢️ GeoAI Hydrocarbon Prospectivity Modeling
 
-📌 Overview
+### Machine Learning • Petroleum Geophysics • Seismic Interpretation • GeoAI
 
-This project presents an AI-assisted hydrocarbon prospectivity modeling workflow that integrates seismic attributes with machine learning. The aim is to demonstrate how GeoAI techniques can support risk-based interpretation in petroleum exploration, rather than claiming direct hydrocarbon discovery.
-The work is designed as an academic and research-oriented mini project, suitable for graduate-level applications and GeoAI portfolios.
+</p>
 
+---
 
-🎯 Motivation
+## 📌 Project Overview
 
-Hydrocarbon exploration involves significant uncertainty due to complex subsurface geology and limited direct observations. Seismic data provides indirect information related to lithology and fluid effects, which can be further analyzed using data-driven methods.
+Hydrocarbon exploration is one of the most complex challenges in geoscience because the subsurface cannot be observed directly. Instead, geoscientists rely on indirect indicators derived from seismic data and geological interpretation.
+
+This project demonstrates how **GeoAI techniques can support hydrocarbon prospectivity analysis** by combining seismic attributes with machine learning models.
+
+Rather than claiming hydrocarbon discovery, the workflow focuses on **prospectivity assessment and interpretation support**, similar to early-stage petroleum exploration workflows used in academia and industry.
+
+The project is designed as a **research-oriented GeoAI mini project**, suitable for academic portfolios, graduate applications, and geoscience data science demonstrations.
+
+---
+
+## 🎯 Motivation
+
+Hydrocarbon exploration involves significant uncertainty due to complex subsurface geology and limited direct observations.
+
+Seismic surveys provide indirect information related to:
+
+• rock properties  
+• structural traps  
+• fluid indicators  
+
+Machine learning can assist geoscientists by identifying patterns within these attributes.
 
 This project explores how:
 
-🧠 Seismic attributes act as proxies for subsurface properties
+🧠 **Seismic attributes act as proxies for subsurface properties**
 
-🤖 Machine learning assists in prospect ranking
+🤖 **Machine learning assists exploration risk evaluation**
 
-🪨 Geological reasoning is preserved alongside AI
+🪨 **Geological reasoning remains central to interpretation**
 
+The aim is to demonstrate how **AI can enhance geological workflows rather than replace them**.
 
-🗂 Dataset
+---
 
-The workflow is real-data ready and supports:
+## 🗂 Dataset
 
-📡 SEG-Y seismic volumes (e.g., F3 Netherlands Offshore or similar open datasets)
+The workflow is designed to be flexible and adaptable to different research scenarios.
 
-🧪 Physics-inspired synthetic seismic attributes when real data are unavailable
+The model supports two types of datasets:
 
-This reflects realistic research scenarios where data availability may be staged.
+📡 **SEG-Y seismic volumes**
 
+Example datasets include publicly available seismic datasets such as the **F3 Netherlands Offshore dataset**, commonly used in academic geophysics research.
 
-🔬 Methodology
+🧪 **Physics-inspired synthetic seismic attributes**
 
-The modeling pipeline follows standard geophysical practice:
+When real seismic data are unavailable, synthetic attributes are generated based on realistic geophysical relationships between impedance, amplitude, and frequency.
+
+This approach ensures the project remains **reproducible and demonstration-ready**.
+
+---
+
+## 🔬 Methodology
+
+The modeling pipeline follows a simplified version of a **standard seismic interpretation workflow** used in petroleum geophysics.
+
+Key steps include:
 
 📥 Loading and validating seismic data
 
 👁️ Visualizing seismic sections for quality control
 
-📊 Extracting RMS amplitude as a key seismic attribute
+📊 Extracting seismic attributes such as **RMS amplitude**
 
 🧩 Preparing feature matrices for machine learning
 
-🌲 Applying a Random Forest classifier with class-imbalance handling
+🌲 Training a **Random Forest classifier**
 
-🔁 Using stratified cross-validation for robustness
+🔁 Applying **Stratified Cross Validation** for robust model evaluation
 
-🔍 Interpreting results using feature importance
+🔍 Interpreting model behavior using **feature importance analysis**
 
+This workflow combines **geophysical reasoning with data-driven modeling**.
 
-🌍 Geological Interpretation
+---
 
-Seismic amplitude-based attributes, such as RMS amplitude, are widely used in petroleum geophysics to highlight contrasts in acoustic impedance. These contrasts may be associated with lithological changes, porosity variations, or fluid effects.
-The model identifies anomalous attribute patterns that are commonly evaluated during hydrocarbon exploration. Final validation of such zones would always require integration with well data, rock physics analysis, and drilling.
+## 🌍 Geological Interpretation
 
-🛢️ This project does not attempt direct hydrocarbon detection.
+Seismic attributes such as **RMS amplitude** are widely used in petroleum geophysics to highlight contrasts in **acoustic impedance**.
 
-It focuses on prospectivity assessment and interpretation support.
+These contrasts may indicate:
 
-📊 Results
+• lithological variations  
+• porosity changes  
+• fluid effects  
 
-✅ Stable model performance under cross-validation
+Machine learning models can help highlight **anomalous attribute patterns** that may correspond to zones of geological interest.
+
+However, true hydrocarbon confirmation would require integration with:
+
+• well logs  
+• rock physics analysis  
+• structural interpretation  
+• drilling verification
+
+🛢️ **This project does not attempt direct hydrocarbon detection.**
+
+Instead, it demonstrates **prospectivity modeling as a decision-support workflow**.
+
+---
+
+## 📊 Results
+
+The modeling workflow demonstrates several encouraging outcomes:
+
+✅ Stable performance under cross-validation
 
 ✅ Identification of key seismic attributes influencing prospectivity
 
-✅ Clear separation of prospective vs non-prospective zones in attribute space
+✅ Clear separation between prospective and non-prospective zones in attribute space
 
-✅ Workflow ready for extension to real interpreted seismic datasets
+✅ A modeling workflow that can be extended to real interpreted seismic datasets
 
+These results illustrate how **GeoAI can support exploration geoscientists during early-stage prospect evaluation**.
 
-⚠️ Limitations
+---
 
-No direct well-log or production data
-Proxy-based labels instead of confirmed hydrocarbon occurrences
-Structural interpretation (faults, horizons) not explicitly included
-Results therefore represent exploratory prospectivity, not proven reserves.
+## ⚠️ Limitations
 
+As an academic demonstration project, some limitations exist:
 
-🚀 Scope for Future Work
+• No well-log calibration data included
 
-➕ Multi-attribute integration (frequency, envelope, sweetness)
+• Labels are generated using **proxy geological rules**
 
-🧬 Rock-physics-based features (Vp/Vs, Poisson’s ratio, LMR)
+• Structural interpretation (faults and horizons) is not explicitly modeled
 
-🧠 Explainable AI techniques (e.g., SHAP)
+Therefore, the results represent **exploration indicators rather than confirmed hydrocarbon reserves**.
 
-🛰️ Deep learning models for 2D/3D seismic volumes
+---
 
-🧪 Well-to-seismic tie and calibration
+## 🚀 Future Scope
 
+This project can be expanded with more advanced exploration techniques:
 
-🛠 Tools & Technologies
+➕ Multi-attribute integration  
+(frequency, envelope, sweetness)
 
-Python • NumPy • Pandas • Matplotlib • Scikit-learn • segyio
+🧬 Rock physics derived attributes  
+(Vp/Vs ratio, Poisson's ratio, Lambda-Mu-Rho)
 
+🧠 Explainable AI techniques  
+(SHAP, feature attribution)
 
-🎓 Academic Note
+🛰️ Deep learning models for **2D and 3D seismic volumes**
 
-This repository represents a GeoAI mini-project for research and academic demonstration.
-It emphasizes workflow design, geological reasoning, and responsible use of AI in petroleum geoscience.
+🧪 Integration with **well logs and seismic-to-well calibration**
 
+---
 
-👤 Author
+## 🛠 Tools & Technologies
 
-Bikrant Kumar Mishra
+Python  
+NumPy  
+Pandas  
+Matplotlib  
+Scikit-learn  
+segyio  
+
+These tools enable the development of **GeoAI workflows for seismic interpretation and exploration analytics**.
+
+---
+
+## 📚 References
+
+1. Taner, M. T., & Sheriff, R. E. (1977). *Seismic Attributes*. Geophysical Prospecting.
+
+2. Chopra, S., & Marfurt, K. J. (2007). *Seismic Attributes for Prospect Identification and Reservoir Characterization*. SEG.
+
+3. Goodfellow, I., Bengio, Y., & Courville, A. (2016). *Deep Learning*. MIT Press.
+
+4. Hall, M. (2016). *Machine Learning Methods for Petroleum Exploration*. SEG.
+
+5. Netherlands Offshore F3 Seismic Dataset – Open Seismic Repository.
+
+---
+
+## 👤 Author
+
+**Bikrant Kumar Mishra**
+
 Background: Geology
-Interests: GeoAI, Petroleum Geophysics, Seismic Interpretation, Earth System Modeling
+
+Research Interests:
+
+• GeoAI  
+• Petroleum Geophysics  
+• Seismic Interpretation  
+• Earth System Modeling
+
+---
+
+⭐ If you found this project interesting, feel free to explore the repository and the accompanying GeoAI portfolio.
