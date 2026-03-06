@@ -204,3 +204,17 @@ Earth System Modeling
 ---
 
 ⭐ If you found this project interesting, feel free to explore the repository and the accompanying GeoAI portfolio.
+
+---
+
+---
+
+## 🌐 Live Interactive Project
+
+🛢️ **GeoAI Hydrocarbon Prospectivity Modeling**
+
+🔗 https://bikrantmishrageo2005.github.io/GeoAI-Hydrocarbon-Prospectivity-Modeling/
+
+This interactive web page presents the GeoAI hydrocarbon prospectivity modeling project, including seismic attribute analysis, machine learning based exploration workflows, and visualization of hydrocarbon prospectivity indicators.
+
+---
